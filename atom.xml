@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-10-03T09:26:38.774Z</updated>
+  <updated>2021-10-06T10:52:15.958Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>完善博客</title>
+    <link href="http://example.com/2021/10/06/%E5%AE%8C%E5%96%84%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://example.com/2021/10/06/%E5%AE%8C%E5%96%84%E5%8D%9A%E5%AE%A2/</id>
+    <published>2021-10-06T10:09:54.000Z</published>
+    <updated>2021-10-06T10:52:15.958Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="完善我的博客"><a href="#完善我的博客" class="headerlink" title="完善我的博客"></a>完善我的博客</h1><p>经过这几天来不懈的努力，我终于逐渐完善了我的博客，主题换了，各种插件也去下载并应用了，虽然没有很完善，但是我认为这是我的一个小进步，而且我认为我挺享受这个过程的，因为过程中的error和fatal比较少，而且我都能通过查找资料找出错误并去纠正它，欢迎各位大佬通过我的邮箱来指正我不足的地方。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;完善我的博客&quot;&gt;&lt;a href=&quot;#完善我的博客&quot; class=&quot;headerlink&quot; title=&quot;完善我的博客&quot;&gt;&lt;/a&gt;完善我的博客&lt;/h1&gt;&lt;p&gt;经过这几天来不懈的努力，我终于逐渐完善了我的博客，主题换了，各种插件也去下载并应用了，虽然没有很完善，但是我</summary>
+      
+    
+    
+    
+    <category term="hexo主题" scheme="http://example.com/categories/hexo%E4%B8%BB%E9%A2%98/"/>
+    
+    
+    <category term="完善博客" scheme="http://example.com/tags/%E5%AE%8C%E5%96%84%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
   
   <entry>
     <title>更换主题失败</title>

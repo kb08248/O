@@ -45,15 +45,12 @@
     <link href="http://example.com/2021/10/03/%E6%8D%A2%E4%B8%BB%E9%A2%98/"/>
     <id>http://example.com/2021/10/03/%E6%8D%A2%E4%B8%BB%E9%A2%98/</id>
     <published>2021-10-03T08:38:00.000Z</published>
-    <updated>2021-10-03T09:26:38.774Z</updated>
+    <updated>2021-10-07T10:59:51.763Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="记我的主题更换"><a href="#记我的主题更换" class="headerlink" title="记我的主题更换"></a>记我的主题更换</h1><p>今早打开自己的hexo博客觉得太单调无聊了，不想和别人一样的博客界面，想尝试一下自己更换自己的界面。当然第一步还是去网上查找了相关资料，查到了一个更换主题的hexo自带网站：<a href="https://hexo.io/themes/">https://hexo.io/themes/</a> 浏览了一番过后选中了自己喜欢的主题，最终选中了这款<a href="https://github.com/WinMin/Sw-blog">https://github.com/WinMin/Sw-blog</a> 我按照网上讲述的过程去做，结果是换了别人创作的主题没错，可是内容也换成了别人的了，经过了漫长的翻阅资料时间，我最终放弃了更换主题，打算恢复默认主题，后来我就克隆原来的主题，改了一些地方，终于是把主题更换回来了，但是我的博客里面还增加了几个我不认识的文件，具体看图。<br><img src="img/header.jpg" alt="header"><br>经过这次的学习，我发现我对于github还是不太熟练，毕竟更换壁纸的难度不算太大，可是我却搞砸了，在git bash here中经常出现fatal和error，心态都锻炼到位了，下次更换主题我想在实验室里更换，毕竟那里大佬更多，我也能更放心地去开拓自己的视野，因为我生怕把自己的电脑搞坏了。。。</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="记我的主题更换"><a href="#记我的主题更换" class="headerlink" title="记我的主题更换"></a>记我的主题更换</h1><p>今早打开自己的hexo博客觉得太单调无聊了，不想和别人一样的博客界面，想尝试一下自己更换自己的界面。当然第一步还是去网上查找了相关资料，查到了一个更换主题的hexo自带网站：<a href="https://hexo.io/themes/">https://hexo.io/themes/</a> 浏览了一番过后选中了自己喜欢的主题，最终选中了这款<a href="https://github.com/WinMin/Sw-blog">https://github.com/WinMin/Sw-blog</a> 我按照网上讲述的过程去做，结果是换了别人创作的主题没错，可是内容也换成了别人的了，经过了漫长的翻阅资料时间，我最终放弃了更换主题，打算恢复默认主题，后来我就克隆原来的主题，改了一些地方，终于是把主题更换回来了，但是我的博客里面还增加了几个我不认识的文件，具体看图。<br><img src="img/1.png" alt="header"></p><span id="more"></span><p>经过这次的学习，我发现我对于github还是不太熟练，毕竟更换壁纸的难度不算太大，可是我却搞砸了，在git bash here中经常出现fatal和error，心态都锻炼到位了，下次更换主题我想在实验室里更换，毕竟那里大佬更多，我也能更放心地去开拓自己的视野，因为我生怕把自己的电脑搞坏了。。。</p>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;h1 id=&quot;记我的主题更换&quot;&gt;&lt;a href=&quot;#记我的主题更换&quot; class=&quot;headerlink&quot; title=&quot;记我的主题更换&quot;&gt;&lt;/a&gt;记我的主题更换&lt;/h1&gt;&lt;p&gt;今早打开自己的hexo博客觉得太单调无聊了，不想和别人一样的博客界面，想尝试一下自己更换自己的界面。</summary>
-      
+    <summary type="html">&lt;h1 id=&quot;记我的主题更换&quot;&gt;&lt;a href=&quot;#记我的主题更换&quot; class=&quot;headerlink&quot; title=&quot;记我的主题更换&quot;&gt;&lt;/a&gt;记我的主题更换&lt;/h1&gt;&lt;p&gt;今早打开自己的hexo博客觉得太单调无聊了，不想和别人一样的博客界面，想尝试一下自己更换自己的界面。当然第一步还是去网上查找了相关资料，查到了一个更换主题的hexo自带网站：&lt;a href=&quot;https://hexo.io/themes/&quot;&gt;https://hexo.io/themes/&lt;/a&gt; 浏览了一番过后选中了自己喜欢的主题，最终选中了这款&lt;a href=&quot;https://github.com/WinMin/Sw-blog&quot;&gt;https://github.com/WinMin/Sw-blog&lt;/a&gt; 我按照网上讲述的过程去做，结果是换了别人创作的主题没错，可是内容也换成了别人的了，经过了漫长的翻阅资料时间，我最终放弃了更换主题，打算恢复默认主题，后来我就克隆原来的主题，改了一些地方，终于是把主题更换回来了，但是我的博客里面还增加了几个我不认识的文件，具体看图。&lt;br&gt;&lt;img src=&quot;img/1.png&quot; alt=&quot;header&quot;&gt;&lt;/p&gt;</summary>
     
     
     

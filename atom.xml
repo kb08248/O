@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Hello World</title>
-  
+  <icon>http://example.com/icon.png</icon>
   
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-10-06T10:52:15.958Z</updated>
+  <updated>2021-10-24T05:44:42.111Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,18 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>C语言的学习</title>
+    <link href="http://example.com/2021/10/24/%E6%95%B0%E7%BB%84/"/>
+    <id>http://example.com/2021/10/24/%E6%95%B0%E7%BB%84/</id>
+    <published>2021-10-24T05:27:45.000Z</published>
+    <updated>2021-10-24T05:44:42.111Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;C的学习&quot;&gt;&lt;a href=&quot;#C的学习&quot; class=&quot;headerlink&quot; title=&quot;C的学习&quot;&gt;&lt;/a&gt;C的学习&lt;/h1&gt;&lt;p&gt;例题：输入50个学生的某门课程的成绩，打印出低于平均分的学生序号与成绩。&lt;br&gt;　　【分析】在解决这个问题时，虽然可以通过一个变量来累加读入的50个成绩求出学生的总分，进而求出平均分。但因为只有读入最后一个学生的分数后才能求得平均分，并且要求打印出低于平均分的学生序号和成绩，故必须把50个学生的成绩都保留起来，然后逐个和平均分比较，把低于平均分的成绩打印出来。如果，用简单变量a1，a2,…，a50存储这些数据，要用50个变量保存输入的数据，程序片断如下：&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="C" scheme="http://example.com/categories/C/"/>
+    
+    
+    <category term="C" scheme="http://example.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
     <title>完善博客</title>
     <link href="http://example.com/2021/10/06/%E5%AE%8C%E5%96%84%E5%8D%9A%E5%AE%A2/"/>
     <id>http://example.com/2021/10/06/%E5%AE%8C%E5%96%84%E5%8D%9A%E5%AE%A2/</id>
     <published>2021-10-06T10:09:54.000Z</published>
     <updated>2021-10-06T10:52:15.958Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="完善我的博客"><a href="#完善我的博客" class="headerlink" title="完善我的博客"></a>完善我的博客</h1><p>经过这几天来不懈的努力，我终于逐渐完善了我的博客，主题换了，各种插件也去下载并应用了，虽然没有很完善，但是我认为这是我的一个小进步，而且我认为我挺享受这个过程的，因为过程中的error和fatal比较少，而且我都能通过查找资料找出错误并去纠正它，欢迎各位大佬通过我的邮箱来指正我不足的地方。</p>]]></content>
-    
     
       
       
-    <summary type="html">&lt;h1 id=&quot;完善我的博客&quot;&gt;&lt;a href=&quot;#完善我的博客&quot; class=&quot;headerlink&quot; title=&quot;完善我的博客&quot;&gt;&lt;/a&gt;完善我的博客&lt;/h1&gt;&lt;p&gt;经过这几天来不懈的努力，我终于逐渐完善了我的博客，主题换了，各种插件也去下载并应用了，虽然没有很完善，但是我</summary>
+        
+        
+    <summary type="html">&lt;h1 id=&quot;完善我的博客&quot;&gt;&lt;a href=&quot;#完善我的博客&quot; class=&quot;headerlink&quot;</summary>
+        
       
     
     
@@ -46,8 +66,6 @@
     <id>http://example.com/2021/10/03/%E6%8D%A2%E4%B8%BB%E9%A2%98/</id>
     <published>2021-10-03T08:38:00.000Z</published>
     <updated>2021-10-07T10:59:51.763Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="记我的主题更换"><a href="#记我的主题更换" class="headerlink" title="记我的主题更换"></a>记我的主题更换</h1><p>今早打开自己的hexo博客觉得太单调无聊了，不想和别人一样的博客界面，想尝试一下自己更换自己的界面。当然第一步还是去网上查找了相关资料，查到了一个更换主题的hexo自带网站：<a href="https://hexo.io/themes/">https://hexo.io/themes/</a> 浏览了一番过后选中了自己喜欢的主题，最终选中了这款<a href="https://github.com/WinMin/Sw-blog">https://github.com/WinMin/Sw-blog</a> 我按照网上讲述的过程去做，结果是换了别人创作的主题没错，可是内容也换成了别人的了，经过了漫长的翻阅资料时间，我最终放弃了更换主题，打算恢复默认主题，后来我就克隆原来的主题，改了一些地方，终于是把主题更换回来了，但是我的博客里面还增加了几个我不认识的文件，具体看图。<br><img src="img/1.png" alt="header"></p><span id="more"></span><p>经过这次的学习，我发现我对于github还是不太熟练，毕竟更换壁纸的难度不算太大，可是我却搞砸了，在git bash here中经常出现fatal和error，心态都锻炼到位了，下次更换主题我想在实验室里更换，毕竟那里大佬更多，我也能更放心地去开拓自己的视野，因为我生怕把自己的电脑搞坏了。。。</p>]]></content>
     
     
     <summary type="html">&lt;h1 id=&quot;记我的主题更换&quot;&gt;&lt;a href=&quot;#记我的主题更换&quot; class=&quot;headerlink&quot; title=&quot;记我的主题更换&quot;&gt;&lt;/a&gt;记我的主题更换&lt;/h1&gt;&lt;p&gt;今早打开自己的hexo博客觉得太单调无聊了，不想和别人一样的博客界面，想尝试一下自己更换自己的界面。当然第一步还是去网上查找了相关资料，查到了一个更换主题的hexo自带网站：&lt;a href=&quot;https://hexo.io/themes/&quot;&gt;https://hexo.io/themes/&lt;/a&gt; 浏览了一番过后选中了自己喜欢的主题，最终选中了这款&lt;a href=&quot;https://github.com/WinMin/Sw-blog&quot;&gt;https://github.com/WinMin/Sw-blog&lt;/a&gt; 我按照网上讲述的过程去做，结果是换了别人创作的主题没错，可是内容也换成了别人的了，经过了漫长的翻阅资料时间，我最终放弃了更换主题，打算恢复默认主题，后来我就克隆原来的主题，改了一些地方，终于是把主题更换回来了，但是我的博客里面还增加了几个我不认识的文件，具体看图。&lt;br&gt;&lt;img src=&quot;img/1.png&quot; alt=&quot;header&quot;&gt;&lt;/p&gt;</summary>
@@ -67,8 +85,6 @@
     <id>http://example.com/2021/09/21/%E5%9C%A8%E8%BF%99%E9%87%8C/</id>
     <published>2021-09-21T09:54:59.000Z</published>
     <updated>2021-09-22T04:43:30.569Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="1、新建一篇文章"><a href="#1、新建一篇文章" class="headerlink" title="1、新建一篇文章"></a>1、新建一篇文章</h2><p>#include<iostream><br>using namespace std;<br>int main()<br>{<br>  cout&lt;&lt;”hallo world”;<br>  return 0;<br>}</p><span id="more"></span><p><img src="img/header.jpg" alt="header"></p>]]></content>
     
     
     <summary type="html">&lt;h2 id=&quot;1、新建一篇文章&quot;&gt;&lt;a href=&quot;#1、新建一篇文章&quot; class=&quot;headerlink&quot; title=&quot;1、新建一篇文章&quot;&gt;&lt;/a&gt;1、新建一篇文章&lt;/h2&gt;&lt;p&gt;#include&lt;iostream&gt;&lt;br&gt;using namespace std;&lt;br&gt;int main()&lt;br&gt;{&lt;br&gt;  cout&amp;lt;&amp;lt;”hallo world”;&lt;br&gt;  return 0;&lt;br&gt;}&lt;/p&gt;</summary>

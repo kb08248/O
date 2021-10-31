@@ -1,82 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>c语言</title>
-    <url>/2021/10/31/c%E8%AF%AD%E8%A8%80/</url>
-    <content><![CDATA[<h1 id="C语言"><a href="#C语言" class="headerlink" title="C语言"></a>C语言</h1><p>二维数组的数组元素引用与一维数组元素引用类似，区别在于二维数组元素的引用必须给出两个下标。<br>引用的格式为：<br>　　       &lt;数组名&gt;[下标1][下标2]；<br>说明：显然，每个下标表达式取值不应超出下标所指定的范围，否则会导致致命的越界错误。<br>　　例如，设有定义：int a[3][5];<br>　　则表示a是二维数组（相当于一个3<em>5的表格），共有3</em>5=15个元素，它们是：<br>　　a[0][0] a[0][1] a[0][2] a[0][3] a[0][4]<br>　　a[1][0] a[1][1] a[1][2] a[1][3] a[1][4]<br>　　a[2][0] a[2][1] a[2][2] a[2][3] a[2][4]<br>　　因此可以看成一个矩阵（表格），a[2][3]即表示第3行第4列的元素。<br>二维数组的初始化和一维数组类似。可以将每一行分开来写在各自的括号里，也可以把所有数据写在一个括号里。</p>
-<span id="more"></span>
-
-<p>字符数组<br>字符类型为由一个字符组成的字符常量或字符变量。<br>　　字符常量定义:<br>　　　 const　<br>　　　　　　字符常量=‘字符’<br>　　字符变量定义:<br>　　　　　    char 字符变量;<br>　　字符类型是一个有序类型, 字符的大小顺序按其ASCⅡ代码的大小而定。</p>
-<p>字符数组是指元素为字符的数组。字符数组是用来存放字符序列或字符串的。字符数组也有一维、二维和三维之分。</p>
-<p>1、字符数组的定义格式<br>　　字符数组定义格式同于一般数组，所不同的是数组类型是字符型，第一个元素同样是从ch1[0]开始，而不是ch1[1]。具体格式如下：<br>　　     [存储类型] char 数组名[常量表达式1]…<br>　　例如：<br>　　  char ch1[5];          //数组ch1是一个具有5个字符元素的一维字符数组<br>      char ch2[3][5];   //数组ch2是一个具有15个字符元素的二维字符数组</p>
-<p>2.字符数组的赋值<br>　　字符数组赋值类似于一维数组，赋值分为数组的初始化和数组元素的赋值。初始化的方式有用字符初始化和用字符串初始化两种，也有用初始值表进行初始化的。<br>　　(1).用字符初始化数组<br>　　例如：<br>      char chr1[5]={‘a’,‘b’,‘c’,‘d’,‘e’};<br>　　初始值表中的每个数据项是一个字符，用字符给数组chr1的各个元素初始化。当初始值个数少于元素个数时，从首元素开始赋值，剩余元素默认为空字符。<br>　　字符数组中也可以存放若干个字符，也可以来存放字符串。两者的区别是字符串有一结束符(‘\0’)。反过来说，在一维字符数组中存放着带有结束符的若干个字符称为字符串。字符串是一维数组，但是一维字符数组不等于字符串。<br>　　例如：<br>      char chr2[5]={‘a’,‘b’,‘c’,‘d’,‘\0’}; 即在数组chr2中存放着一个字符串“abcd”。<br>    (2).用字符串初始化数组<br>　　用一个字符串初始化一个一维字符数组，可以写成下列形式：<br>        char chr2[5]=“abcd”;<br>　　使用此格式均要注意字符串的长度应小于字符数组的大小或等于字符数组的大小减1。同理，对二维字符数组来讲，可存放若干个字符串。可使用由若干个字符串组成的初始值表给二维字符数组初始化。<br>　　例如：char chr3[3][4]={“abc”,“mno”,“xyz”};在数组ch3中存放3个字符串，每个字符串的长度不得大于3。<br>　　(3).数组元素赋值<br>　　    字符数组的赋值是给该字符数组的各个元素赋一个字符值。<br>　　例如：<br>　　　char chr[3];<br>　　　chr[0]=‘a’; chr[1]=‘b’;chr[2]=‘c’;<br>　　对二维、三维字符数组也是如此。当需要将一个数组的全部元素值赋予另一数组时，不可以用数组名直接赋值的方式，要使用字符串拷贝函数来完成。<br>    (4).字符常量和字符串常量的区别<br>　　①两者的定界符不同，字符常量由单引号括起来，字符串常量由双引号括起来。<br>　　②字符常量只能是单个字符，字符串常量则可以是多个字符。<br>　　③可以把一个字符常量赋给一个字符变量，但不能把一个字符串常量赋给一个字符变量。<br>　　④字符常量占一个字节，而字符串常量占用字节数等于字符串的字节数加1。增加的一个字节中存放字符串结束标志‘\0’。例如：字符常量‘a’占一个字节，字符串常量“a”占二个字节。</p>
-]]></content>
+<search> 
+  
+  
+    
+    <entry>
+      <title>C语言</title>
+      <link href="/2021/10/31/C%E8%AF%AD%E8%A8%80-0/"/>
+      <url>/2021/10/31/C%E8%AF%AD%E8%A8%80-0/</url>
+      
+        <content type="html"><![CDATA[<h1 id="c世界"><a href="#c世界" class="headerlink" title="c世界"></a>c世界</h1><p>字符串可以作为一维字符数组来处理，那么字符串的输入和输出也可以按照数组元素来处理，本节不再做介绍。本节仅介绍将字符串作为一个整体进行输入和输出的语句。<br>1、输入<br>　　从键盘输入一个字符数组可以使用scanf语句或gets语句。<br>　　(1)scanf语句<br>　　   格式：scanf(“%s”,字符串名称);<br>　　说明：<br>　　①这里的字符串名称之前不加&amp;这个取地址符。例如：scanf(“%s”,&amp;s1)是错误的。<br>　　②系统会自动在输入的字符串常量后添加‘\0’标志，因此输入时，仅输入字符串的内容即可。<br>　　③输入多个字符串时，以空格分隔。</p><span id="more"></span><p>　　例如：scanf(“%s%s%s”,s1,s2,s3)；从键盘分别输入Let us go，则三个字符串分别获取了三个单词。反过来可以想到，如果仅有一个输入字符串名称的情况下，字符串变量仅获取空格前的内容。<br>　　例如：scanf(“%s”,s1)；从键盘分别输入Let us go，则仅有第一个单词被获取，即s1变量仅获取第一个单词Let。<br>　　(2)gets语句<br>　　   格式：gets(字符串名称)；<br>　　说明：<br>　　使用gets只能输入一个字符串。<br>　　例如：gets(s1,s2)；是错误的。使用gets，是从光标开始的地方读到换行符也就是说读入的是一整行，而使用scanf是从光标开始的地方到空格，如果这一行没有空格，才读到行尾。<br>　　例如：scanf(“%s”,s1)；gets(s2)；对于相同的输入Hello World!。s1获取的结果仅仅是Hello，而s2获取的结果则是Hello World!</p><p>2、输出<br>　　向屏幕输出一个字符串可以使用printf语句或puts语句。<br>　　(1)printf语句<br>    格式：printf(“%s”,字符串名称);<br>    说明：<br>　　　①用%s格式输出时，printf的输出项只能是字符串(字符数组)名称，而不能是数组元素。例如：printf(“%s”,a[5]);是错误的。<br>　　　②输出字符串不包括字符串结束标志符‘\0’。<br>　　(2) puts语句<br>    格式：puts(字符串名称);<br>    说明：puts语句输出一个字符串和一个换行符。对于已经声明过的字符串a，printf(“%s\n”,a)和 puts(a)是等价的。<br>系统提供了一些字符串处理函数，用来为用户提供一些字符串的运算。常用的字符串函数介绍如下。<br><img src="img/2.png" alt="header"></p>]]></content>
+      
+      
       <categories>
-        <category>C语言</category>
+          
+          <category> C语言 </category>
+          
       </categories>
-      <tags>
-        <tag>C语言</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>更换主题失败</title>
-    <url>/2021/10/03/%E6%8D%A2%E4%B8%BB%E9%A2%98/</url>
-    <content><![CDATA[<h1 id="记我的主题更换"><a href="#记我的主题更换" class="headerlink" title="记我的主题更换"></a>记我的主题更换</h1><p>今早打开自己的hexo博客觉得太单调无聊了，不想和别人一样的博客界面，想尝试一下自己更换自己的界面。当然第一步还是去网上查找了相关资料，查到了一个更换主题的hexo自带网站：<a href="https://hexo.io/themes/">https://hexo.io/themes/</a> 浏览了一番过后选中了自己喜欢的主题，最终选中了这款<a href="https://github.com/WinMin/Sw-blog">https://github.com/WinMin/Sw-blog</a> 我按照网上讲述的过程去做，结果是换了别人创作的主题没错，可是内容也换成了别人的了，经过了漫长的翻阅资料时间，我最终放弃了更换主题，打算恢复默认主题，后来我就克隆原来的主题，改了一些地方，终于是把主题更换回来了，但是我的博客里面还增加了几个我不认识的文件，具体看图。<br><img src="img/1.png" alt="header"></p>
-<span id="more"></span>
-<p>经过这次的学习，我发现我对于github还是不太熟练，毕竟更换壁纸的难度不算太大，可是我却搞砸了，在git bash here中经常出现fatal和error，心态都锻炼到位了，下次更换主题我想在实验室里更换，毕竟那里大佬更多，我也能更放心地去开拓自己的视野，因为我生怕把自己的电脑搞坏了。。。</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> C语言 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>c语言</title>
+      <link href="/2021/10/31/c%E8%AF%AD%E8%A8%80/"/>
+      <url>/2021/10/31/c%E8%AF%AD%E8%A8%80/</url>
+      
+        <content type="html"><![CDATA[<h1 id="C语言"><a href="#C语言" class="headerlink" title="C语言"></a>C语言</h1><p>二维数组的数组元素引用与一维数组元素引用类似，区别在于二维数组元素的引用必须给出两个下标。<br>引用的格式为：<br>　　       &lt;数组名&gt;[下标1][下标2]；<br>说明：显然，每个下标表达式取值不应超出下标所指定的范围，否则会导致致命的越界错误。<br>　　例如，设有定义：int a[3][5];<br>　　则表示a是二维数组（相当于一个3<em>5的表格），共有3</em>5=15个元素，它们是：<br>　　a[0][0] a[0][1] a[0][2] a[0][3] a[0][4]<br>　　a[1][0] a[1][1] a[1][2] a[1][3] a[1][4]<br>　　a[2][0] a[2][1] a[2][2] a[2][3] a[2][4]<br>　　因此可以看成一个矩阵（表格），a[2][3]即表示第3行第4列的元素。<br>二维数组的初始化和一维数组类似。可以将每一行分开来写在各自的括号里，也可以把所有数据写在一个括号里。</p><span id="more"></span><p>字符数组<br>字符类型为由一个字符组成的字符常量或字符变量。<br>　　字符常量定义:<br>　　　 const　<br>　　　　　　字符常量=‘字符’<br>　　字符变量定义:<br>　　　　　    char 字符变量;<br>　　字符类型是一个有序类型, 字符的大小顺序按其ASCⅡ代码的大小而定。</p><p>字符数组是指元素为字符的数组。字符数组是用来存放字符序列或字符串的。字符数组也有一维、二维和三维之分。</p><p>1、字符数组的定义格式<br>　　字符数组定义格式同于一般数组，所不同的是数组类型是字符型，第一个元素同样是从ch1[0]开始，而不是ch1[1]。具体格式如下：<br>　　     [存储类型] char 数组名[常量表达式1]…<br>　　例如：<br>　　  char ch1[5];          //数组ch1是一个具有5个字符元素的一维字符数组<br>      char ch2[3][5];   //数组ch2是一个具有15个字符元素的二维字符数组</p><p>2.字符数组的赋值<br>　　字符数组赋值类似于一维数组，赋值分为数组的初始化和数组元素的赋值。初始化的方式有用字符初始化和用字符串初始化两种，也有用初始值表进行初始化的。<br>　　(1).用字符初始化数组<br>　　例如：<br>      char chr1[5]={‘a’,‘b’,‘c’,‘d’,‘e’};<br>　　初始值表中的每个数据项是一个字符，用字符给数组chr1的各个元素初始化。当初始值个数少于元素个数时，从首元素开始赋值，剩余元素默认为空字符。<br>　　字符数组中也可以存放若干个字符，也可以来存放字符串。两者的区别是字符串有一结束符(‘\0’)。反过来说，在一维字符数组中存放着带有结束符的若干个字符称为字符串。字符串是一维数组，但是一维字符数组不等于字符串。<br>　　例如：<br>      char chr2[5]={‘a’,‘b’,‘c’,‘d’,‘\0’}; 即在数组chr2中存放着一个字符串“abcd”。<br>    (2).用字符串初始化数组<br>　　用一个字符串初始化一个一维字符数组，可以写成下列形式：<br>        char chr2[5]=“abcd”;<br>　　使用此格式均要注意字符串的长度应小于字符数组的大小或等于字符数组的大小减1。同理，对二维字符数组来讲，可存放若干个字符串。可使用由若干个字符串组成的初始值表给二维字符数组初始化。<br>　　例如：char chr3[3][4]={“abc”,“mno”,“xyz”};在数组ch3中存放3个字符串，每个字符串的长度不得大于3。<br>　　(3).数组元素赋值<br>　　    字符数组的赋值是给该字符数组的各个元素赋一个字符值。<br>　　例如：<br>　　　char chr[3];<br>　　　chr[0]=‘a’; chr[1]=‘b’;chr[2]=‘c’;<br>　　对二维、三维字符数组也是如此。当需要将一个数组的全部元素值赋予另一数组时，不可以用数组名直接赋值的方式，要使用字符串拷贝函数来完成。<br>    (4).字符常量和字符串常量的区别<br>　　①两者的定界符不同，字符常量由单引号括起来，字符串常量由双引号括起来。<br>　　②字符常量只能是单个字符，字符串常量则可以是多个字符。<br>　　③可以把一个字符常量赋给一个字符变量，但不能把一个字符串常量赋给一个字符变量。<br>　　④字符常量占一个字节，而字符串常量占用字节数等于字符串的字节数加1。增加的一个字节中存放字符串结束标志‘\0’。例如：字符常量‘a’占一个字节，字符串常量“a”占二个字节。</p>]]></content>
+      
+      
       <categories>
-        <category>hexo主题</category>
+          
+          <category> C语言 </category>
+          
       </categories>
-      <tags>
-        <tag>hexo主题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>C语言的学习</title>
-    <url>/2021/10/24/%E6%95%B0%E7%BB%84/</url>
-    <content><![CDATA[<h1 id="C的学习"><a href="#C的学习" class="headerlink" title="C的学习"></a>C的学习</h1><p>例题：输入50个学生的某门课程的成绩，打印出低于平均分的学生序号与成绩。<br>　　【分析】在解决这个问题时，虽然可以通过一个变量来累加读入的50个成绩求出学生的总分，进而求出平均分。但因为只有读入最后一个学生的分数后才能求得平均分，并且要求打印出低于平均分的学生序号和成绩，故必须把50个学生的成绩都保留起来，然后逐个和平均分比较，把低于平均分的成绩打印出来。如果，用简单变量a1，a2,…，a50存储这些数据，要用50个变量保存输入的数据，程序片断如下：</p>
-<span id="more"></span>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">　　cin&gt;&gt;a1&gt;&gt;a2&gt;&gt;…&gt;&gt;a10;</span><br><span class="line">　　…</span><br><span class="line">　　cin&gt;&gt;a41&gt;&gt;a42&gt;&gt;…&gt;&gt;a50;</span><br></pre></td></tr></table></figure>
-<p>注意，如果真正要像上面这样编写程序，则上面的所有省略号必须用完整的语句写出来。可以看出，这样的程序是多么繁琐。如果说处理的数据规模达到成千上万，上面的例子单单读入就会异常复杂，电脑的优势没有得到体现。<br>　　从以上的讨论可以看出，如果只使用简单变量处理大量数据，就必须使用大量只能单独处理的变量，即使是简单问题也需要编写冗长的程序。</p>
-<p>如果能像数学中使用下标变量ai形式表示这50个数，则问题就容易实现。在C语言中，具有下标性质的数据类型是数组。如果使用数组，上面的问题就变得十分简单、清晰。例如，读入50个学生的成绩，只需写如下语句即可：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">　　 for (int i=1;i&lt;=50;++i)</span><br><span class="line">　　      cin&gt;&gt;a[i];</span><br></pre></td></tr></table></figure>
-<p>　　在这里引用了带下标的变量（分量变量称为数组元素）a[i]来代替a1,a2…,a50,方括号中的i称为下标，当循环变量i=1时a[i]就是a[1]；当i=2时a[i]就是a[2]……；当i=50时a[i]就是a[50]。输入的时候，让i从1变化到50，循环体内输入语句中的a[i]也就分别代表了a1,a2…,a50这50个带下标的变量。这样上述问题的程序可写为：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">　　tot = 0;		// tot存储50个学生的总分</span><br><span class="line">　　for (int i=1;i&lt;=50;++i)	// 循环读入每一个学生的成绩，并把它累加到总分中</span><br><span class="line">　　&#123;</span><br><span class="line">　　  cin&gt;&gt;a[i];</span><br><span class="line">　　  tot+=a[i];</span><br><span class="line">　　&#125;</span><br><span class="line">　　ave= tot/50;  	               //计算平均分</span><br><span class="line">　　for (int i=1;i&lt;=50;++i)</span><br><span class="line">　　　if (a[i]&lt;ave) cout&lt;&lt;&quot;No. &quot;&lt;&lt;i&lt;&lt;&quot; &quot;&lt;&lt;a[i];</span><br><span class="line">　　//如果第i个同学成绩小于平均分，则将输出这个学生的序号和成绩。</span><br></pre></td></tr></table></figure>
-<p>当数组中每个元素只带有一个下标时，我们称这样的数组为一维数组。<br>　　数组的定义格式如下：<br>　　　类型标识符  数组名[常量表达式]<br>　　说明：<br>　　①数组名的命名规则与变量名的命名规则一致。<br>　　②常量表达式表示数组元素的个数。可以是常量和符号常量，但不能是变量。<br>　　例如：<br>　　int a[10];           //数组a定义是合法的<br>    int b[n];            //数组b定义是非法的<br>说明：<br>　　(1)在初值列表中可以写出全部数组元素的值，也可以写出部分。例如，以下方式可以对数组进行初始化：<br>　　int x[10]={0,1,2,3,4};<br>　　该方法仅对数组的前5个元素依次进行初始化，其余值为0。<br>　　(2)对数组元素全部初始化为0，可以简写为：{}。<br>　　例如：<br>       int a[5]={}; 将数组a的5个元素都初始化为0。</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> C语言 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>C语言的学习</title>
+      <link href="/2021/10/24/%E6%95%B0%E7%BB%84/"/>
+      <url>/2021/10/24/%E6%95%B0%E7%BB%84/</url>
+      
+        <content type="html"><![CDATA[<h1 id="C的学习"><a href="#C的学习" class="headerlink" title="C的学习"></a>C的学习</h1><p>例题：输入50个学生的某门课程的成绩，打印出低于平均分的学生序号与成绩。<br>　　【分析】在解决这个问题时，虽然可以通过一个变量来累加读入的50个成绩求出学生的总分，进而求出平均分。但因为只有读入最后一个学生的分数后才能求得平均分，并且要求打印出低于平均分的学生序号和成绩，故必须把50个学生的成绩都保留起来，然后逐个和平均分比较，把低于平均分的成绩打印出来。如果，用简单变量a1，a2,…，a50存储这些数据，要用50个变量保存输入的数据，程序片断如下：</p><span id="more"></span><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">　　cin&gt;&gt;a1&gt;&gt;a2&gt;&gt;…&gt;&gt;a10;</span><br><span class="line">　　…</span><br><span class="line">　　cin&gt;&gt;a41&gt;&gt;a42&gt;&gt;…&gt;&gt;a50;</span><br></pre></td></tr></table></figure><p>注意，如果真正要像上面这样编写程序，则上面的所有省略号必须用完整的语句写出来。可以看出，这样的程序是多么繁琐。如果说处理的数据规模达到成千上万，上面的例子单单读入就会异常复杂，电脑的优势没有得到体现。<br>　　从以上的讨论可以看出，如果只使用简单变量处理大量数据，就必须使用大量只能单独处理的变量，即使是简单问题也需要编写冗长的程序。</p><p>如果能像数学中使用下标变量ai形式表示这50个数，则问题就容易实现。在C语言中，具有下标性质的数据类型是数组。如果使用数组，上面的问题就变得十分简单、清晰。例如，读入50个学生的成绩，只需写如下语句即可：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">　　 for (int i=1;i&lt;=50;++i)</span><br><span class="line">　　      cin&gt;&gt;a[i];</span><br></pre></td></tr></table></figure><p>　　在这里引用了带下标的变量（分量变量称为数组元素）a[i]来代替a1,a2…,a50,方括号中的i称为下标，当循环变量i=1时a[i]就是a[1]；当i=2时a[i]就是a[2]……；当i=50时a[i]就是a[50]。输入的时候，让i从1变化到50，循环体内输入语句中的a[i]也就分别代表了a1,a2…,a50这50个带下标的变量。这样上述问题的程序可写为：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">　　tot = 0;// tot存储50个学生的总分</span><br><span class="line">　　for (int i=1;i&lt;=50;++i)// 循环读入每一个学生的成绩，并把它累加到总分中</span><br><span class="line">　　&#123;</span><br><span class="line">　　  cin&gt;&gt;a[i];</span><br><span class="line">　　  tot+=a[i];</span><br><span class="line">　　&#125;</span><br><span class="line">　　ave= tot/50;                 //计算平均分</span><br><span class="line">　　for (int i=1;i&lt;=50;++i)</span><br><span class="line">　　　if (a[i]&lt;ave) cout&lt;&lt;&quot;No. &quot;&lt;&lt;i&lt;&lt;&quot; &quot;&lt;&lt;a[i];</span><br><span class="line">　　//如果第i个同学成绩小于平均分，则将输出这个学生的序号和成绩。</span><br></pre></td></tr></table></figure><p>当数组中每个元素只带有一个下标时，我们称这样的数组为一维数组。<br>　　数组的定义格式如下：<br>　　　类型标识符  数组名[常量表达式]<br>　　说明：<br>　　①数组名的命名规则与变量名的命名规则一致。<br>　　②常量表达式表示数组元素的个数。可以是常量和符号常量，但不能是变量。<br>　　例如：<br>　　int a[10];           //数组a定义是合法的<br>    int b[n];            //数组b定义是非法的<br>说明：<br>　　(1)在初值列表中可以写出全部数组元素的值，也可以写出部分。例如，以下方式可以对数组进行初始化：<br>　　int x[10]={0,1,2,3,4};<br>　　该方法仅对数组的前5个元素依次进行初始化，其余值为0。<br>　　(2)对数组元素全部初始化为0，可以简写为：{}。<br>　　例如：<br>       int a[5]={}; 将数组a的5个元素都初始化为0。</p>]]></content>
+      
+      
       <categories>
-        <category>C</category>
+          
+          <category> C </category>
+          
       </categories>
-      <tags>
-        <tag>C</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>完善博客</title>
-    <url>/2021/10/06/%E5%AE%8C%E5%96%84%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h1 id="完善我的博客"><a href="#完善我的博客" class="headerlink" title="完善我的博客"></a>完善我的博客</h1><p>经过这几天来不懈的努力，我终于逐渐完善了我的博客，主题换了，各种插件也去下载并应用了，虽然没有很完善，但是我认为这是我的一个小进步，而且我认为我挺享受这个过程的，因为过程中的error和fatal比较少，而且我都能通过查找资料找出错误并去纠正它，欢迎各位大佬通过我的邮箱来指正我不足的地方。</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> C </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>完善博客</title>
+      <link href="/2021/10/06/%E5%AE%8C%E5%96%84%E5%8D%9A%E5%AE%A2/"/>
+      <url>/2021/10/06/%E5%AE%8C%E5%96%84%E5%8D%9A%E5%AE%A2/</url>
+      
+        <content type="html"><![CDATA[<h1 id="完善我的博客"><a href="#完善我的博客" class="headerlink" title="完善我的博客"></a>完善我的博客</h1><p>经过这几天来不懈的努力，我终于逐渐完善了我的博客，主题换了，各种插件也去下载并应用了，虽然没有很完善，但是我认为这是我的一个小进步，而且我认为我挺享受这个过程的，因为过程中的error和fatal比较少，而且我都能通过查找资料找出错误并去纠正它，欢迎各位大佬通过我的邮箱来指正我不足的地方。</p>]]></content>
+      
+      
       <categories>
-        <category>hexo主题</category>
+          
+          <category> hexo主题 </category>
+          
       </categories>
-      <tags>
-        <tag>完善博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>在这里</title>
-    <url>/2021/09/21/%E5%9C%A8%E8%BF%99%E9%87%8C/</url>
-    <content><![CDATA[<h2 id="1、新建一篇文章"><a href="#1、新建一篇文章" class="headerlink" title="1、新建一篇文章"></a>1、新建一篇文章</h2><p>#include<iostream><br>using namespace std;<br>int main()<br>{<br>  cout&lt;&lt;”hallo world”;<br>  return 0;<br>}</p>
-<span id="more"></span>
-<p><img src="img/header.jpg" alt="header"></p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 完善博客 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>更换主题失败</title>
+      <link href="/2021/10/03/%E6%8D%A2%E4%B8%BB%E9%A2%98/"/>
+      <url>/2021/10/03/%E6%8D%A2%E4%B8%BB%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[<h1 id="记我的主题更换"><a href="#记我的主题更换" class="headerlink" title="记我的主题更换"></a>记我的主题更换</h1><p>今早打开自己的hexo博客觉得太单调无聊了，不想和别人一样的博客界面，想尝试一下自己更换自己的界面。当然第一步还是去网上查找了相关资料，查到了一个更换主题的hexo自带网站：<a href="https://hexo.io/themes/">https://hexo.io/themes/</a> 浏览了一番过后选中了自己喜欢的主题，最终选中了这款<a href="https://github.com/WinMin/Sw-blog">https://github.com/WinMin/Sw-blog</a> 我按照网上讲述的过程去做，结果是换了别人创作的主题没错，可是内容也换成了别人的了，经过了漫长的翻阅资料时间，我最终放弃了更换主题，打算恢复默认主题，后来我就克隆原来的主题，改了一些地方，终于是把主题更换回来了，但是我的博客里面还增加了几个我不认识的文件，具体看图。<br><img src="img/1.png" alt="header"></p><span id="more"></span><p>经过这次的学习，我发现我对于github还是不太熟练，毕竟更换壁纸的难度不算太大，可是我却搞砸了，在git bash here中经常出现fatal和error，心态都锻炼到位了，下次更换主题我想在实验室里更换，毕竟那里大佬更多，我也能更放心地去开拓自己的视野，因为我生怕把自己的电脑搞坏了。。。</p>]]></content>
+      
+      
       <categories>
-        <category>C++</category>
+          
+          <category> hexo主题 </category>
+          
       </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> hexo主题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>在这里</title>
+      <link href="/2021/09/21/%E5%9C%A8%E8%BF%99%E9%87%8C/"/>
+      <url>/2021/09/21/%E5%9C%A8%E8%BF%99%E9%87%8C/</url>
+      
+        <content type="html"><![CDATA[<h2 id="1、新建一篇文章"><a href="#1、新建一篇文章" class="headerlink" title="1、新建一篇文章"></a>1、新建一篇文章</h2><p>#include<iostream><br>using namespace std;<br>int main()<br>{<br>  cout&lt;&lt;”hallo world”;<br>  return 0;<br>}</p><span id="more"></span><p><img src="img/header.jpg" alt="header"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> C++ </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 博客 </tag>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
 </search>

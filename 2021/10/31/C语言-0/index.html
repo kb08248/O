@@ -21,23 +21,30 @@
   <script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/tags/%E5%8D%9A%E5%AE%A2/index.html">
+<meta name="description" content="c世界字符串可以作为一维字符数组来处理，那么字符串的输入和输出也可以按照数组元素来处理，本节不再做介绍。本节仅介绍将字符串作为一个整体进行输入和输出的语句。1、输入　　从键盘输入一个字符数组可以使用scanf语句或gets语句。　　(1)scanf语句　　   格式：scanf(“%s”,字符串名称);　　说明：　　①这里的字符串名称之前不加&amp;这个取地址符。例如：scanf(“%s”,&amp;a">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C语言">
+<meta property="og:url" content="http://example.com/2021/10/31/C%E8%AF%AD%E8%A8%80-0/index.html">
 <meta property="og:site_name" content="Hello World">
+<meta property="og:description" content="c世界字符串可以作为一维字符数组来处理，那么字符串的输入和输出也可以按照数组元素来处理，本节不再做介绍。本节仅介绍将字符串作为一个整体进行输入和输出的语句。1、输入　　从键盘输入一个字符数组可以使用scanf语句或gets语句。　　(1)scanf语句　　   格式：scanf(“%s”,字符串名称);　　说明：　　①这里的字符串名称之前不加&amp;这个取地址符。例如：scanf(“%s”,&amp;a">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2021/10/31/C%E8%AF%AD%E8%A8%80-0/img/2.png">
+<meta property="article:published_time" content="2021-10-31T12:59:14.000Z">
+<meta property="article:modified_time" content="2021-10-31T13:22:00.104Z">
 <meta property="article:author" content="Li Weitao">
+<meta property="article:tag" content="C语言">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2021/10/31/C%E8%AF%AD%E8%A8%80-0/img/2.png">
 
 
-<link rel="canonical" href="http://example.com/tags/%E5%8D%9A%E5%AE%A2/">
+<link rel="canonical" href="http://example.com/2021/10/31/C%E8%AF%AD%E8%A8%80-0/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"tags/博客/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2021/10/31/C%E8%AF%AD%E8%A8%80-0/","path":"2021/10/31/C语言-0/","title":"C语言"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>标签: 博客 | Hello World</title>
+<title>C语言 | Hello World</title>
   
 
 
@@ -130,7 +137,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -143,6 +150,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#c%E4%B8%96%E7%95%8C"><span class="nav-number">1.</span> <span class="nav-text">c世界</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -207,50 +215,117 @@
 </noscript>
 
 
-    <div class="main-inner tag posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
-  
-  
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <h2 class="collection-header">博客
-          <small>标签</small>
-        </h2>
-      </div>
 
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/31/C%E8%AF%AD%E8%A8%80-0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/header.jpg">
+      <meta itemprop="name" content="Li Weitao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hello World">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          C语言
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2021</span>
+
+      <time title="创建时间：2021-10-31 20:59:14 / 修改时间：21:22:00" itemprop="dateCreated datePublished" datetime="2021-10-31T20:59:14+08:00">2021-10-31</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/C%E8%AF%AD%E8%A8%80/" itemprop="url" rel="index"><span itemprop="name">C语言</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h1 id="c世界"><a href="#c世界" class="headerlink" title="c世界"></a>c世界</h1><p>字符串可以作为一维字符数组来处理，那么字符串的输入和输出也可以按照数组元素来处理，本节不再做介绍。本节仅介绍将字符串作为一个整体进行输入和输出的语句。<br>1、输入<br>　　从键盘输入一个字符数组可以使用scanf语句或gets语句。<br>　　(1)scanf语句<br>　　   格式：scanf(“%s”,字符串名称);<br>　　说明：<br>　　①这里的字符串名称之前不加&amp;这个取地址符。例如：scanf(“%s”,&amp;s1)是错误的。<br>　　②系统会自动在输入的字符串常量后添加‘\0’标志，因此输入时，仅输入字符串的内容即可。<br>　　③输入多个字符串时，以空格分隔。</p>
+<span id="more"></span>
+<p>　　例如：scanf(“%s%s%s”,s1,s2,s3)；从键盘分别输入Let us go，则三个字符串分别获取了三个单词。反过来可以想到，如果仅有一个输入字符串名称的情况下，字符串变量仅获取空格前的内容。<br>　　例如：scanf(“%s”,s1)；从键盘分别输入Let us go，则仅有第一个单词被获取，即s1变量仅获取第一个单词Let。<br>　　(2)gets语句<br>　　   格式：gets(字符串名称)；<br>　　说明：<br>　　使用gets只能输入一个字符串。<br>　　例如：gets(s1,s2)；是错误的。使用gets，是从光标开始的地方读到换行符也就是说读入的是一整行，而使用scanf是从光标开始的地方到空格，如果这一行没有空格，才读到行尾。<br>　　例如：scanf(“%s”,s1)；gets(s2)；对于相同的输入Hello World!。s1获取的结果仅仅是Hello，而s2获取的结果则是Hello World!</p>
+<p>2、输出<br>　　向屏幕输出一个字符串可以使用printf语句或puts语句。<br>　　(1)printf语句<br>    格式：printf(“%s”,字符串名称);<br>    说明：<br>　　　①用%s格式输出时，printf的输出项只能是字符串(字符数组)名称，而不能是数组元素。例如：printf(“%s”,a[5]);是错误的。<br>　　　②输出字符串不包括字符串结束标志符‘\0’。<br>　　(2) puts语句<br>    格式：puts(字符串名称);<br>    说明：puts语句输出一个字符串和一个换行符。对于已经声明过的字符串a，printf(“%s\n”,a)和 puts(a)是等价的。<br>系统提供了一些字符串处理函数，用来为用户提供一些字符串的运算。常用的字符串函数介绍如下。<br><img src="img/2.png" alt="header"></p>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-09-21T17:54:59+08:00"
-              content="2021-09-21">
-          09-21
-        </time>
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div>Buy me a coffee</div>
+  <button>
+    赞赏
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/wechatpay.jpg" alt="Li Weitao 微信">
+        <span>微信</span>
+      </div>
+      <div>
+        <img src="/images/alipay.jpg" alt="Li Weitao 支付宝">
+        <span>支付宝</span>
       </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/09/21/%E5%9C%A8%E8%BF%99%E9%87%8C/" itemprop="url">
-            <span itemprop="name">在这里</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-    </div>
   </div>
-  
-  
-  
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/C%E8%AF%AD%E8%A8%80/" rel="tag"># C语言</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/10/31/c%E8%AF%AD%E8%A8%80/" rel="prev" title="c语言">
+                  <i class="fa fa-chevron-left"></i> c语言
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
 
 </div>
   </main>

@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-10-31T12:56:57.049Z</updated>
+  <updated>2021-10-31T13:22:00.104Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C语言</title>
+    <link href="http://example.com/2021/10/31/C%E8%AF%AD%E8%A8%80-0/"/>
+    <id>http://example.com/2021/10/31/C%E8%AF%AD%E8%A8%80-0/</id>
+    <published>2021-10-31T12:59:14.000Z</published>
+    <updated>2021-10-31T13:22:00.104Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;c世界&quot;&gt;&lt;a href=&quot;#c世界&quot; class=&quot;headerlink&quot; title=&quot;c世界&quot;&gt;&lt;/a&gt;c世界&lt;/h1&gt;&lt;p&gt;字符串可以作为一维字符数组来处理，那么字符串的输入和输出也可以按照数组元素来处理，本节不再做介绍。本节仅介绍将字符串作为一个整体进行输入和输出的语句。&lt;br&gt;1、输入&lt;br&gt;　　从键盘输入一个字符数组可以使用scanf语句或gets语句。&lt;br&gt;　　(1)scanf语句&lt;br&gt;　　   格式：scanf(“%s”,字符串名称);&lt;br&gt;　　说明：&lt;br&gt;　　①这里的字符串名称之前不加&amp;amp;这个取地址符。例如：scanf(“%s”,&amp;amp;s1)是错误的。&lt;br&gt;　　②系统会自动在输入的字符串常量后添加‘\0’标志，因此输入时，仅输入字符串的内容即可。&lt;br&gt;　　③输入多个字符串时，以空格分隔。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="C语言" scheme="http://example.com/categories/C%E8%AF%AD%E8%A8%80/"/>
+    
+    
+    <category term="C语言" scheme="http://example.com/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
   
   <entry>
     <title>c语言</title>

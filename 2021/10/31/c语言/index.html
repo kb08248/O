@@ -21,30 +21,28 @@
   <script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
-<meta name="description" content="记我的主题更换今早打开自己的hexo博客觉得太单调无聊了，不想和别人一样的博客界面，想尝试一下自己更换自己的界面。当然第一步还是去网上查找了相关资料，查到了一个更换主题的hexo自带网站：https:&#x2F;&#x2F;hexo.io&#x2F;themes&#x2F; 浏览了一番过后选中了自己喜欢的主题，最终选中了这款https:&#x2F;&#x2F;github.com&#x2F;WinMin&#x2F;Sw-blog 我按照网上讲述的过程去做，结果是换了别人创作的">
+<meta name="description" content="C语言二维数组的数组元素引用与一维数组元素引用类似，区别在于二维数组元素的引用必须给出两个下标。引用的格式为：　　       &lt;数组名&gt;[下标1][下标2]；说明：显然，每个下标表达式取值不应超出下标所指定的范围，否则会导致致命的越界错误。　　例如，设有定义：int a[3][5];　　则表示a是二维数组（相当于一个35的表格），共有35&#x3D;15个元素，它们是：　　a[0][0] a[">
 <meta property="og:type" content="article">
-<meta property="og:title" content="更换主题失败">
-<meta property="og:url" content="http://example.com/2021/10/03/%E6%8D%A2%E4%B8%BB%E9%A2%98/index.html">
+<meta property="og:title" content="c语言">
+<meta property="og:url" content="http://example.com/2021/10/31/c%E8%AF%AD%E8%A8%80/index.html">
 <meta property="og:site_name" content="Hello World">
-<meta property="og:description" content="记我的主题更换今早打开自己的hexo博客觉得太单调无聊了，不想和别人一样的博客界面，想尝试一下自己更换自己的界面。当然第一步还是去网上查找了相关资料，查到了一个更换主题的hexo自带网站：https:&#x2F;&#x2F;hexo.io&#x2F;themes&#x2F; 浏览了一番过后选中了自己喜欢的主题，最终选中了这款https:&#x2F;&#x2F;github.com&#x2F;WinMin&#x2F;Sw-blog 我按照网上讲述的过程去做，结果是换了别人创作的">
+<meta property="og:description" content="C语言二维数组的数组元素引用与一维数组元素引用类似，区别在于二维数组元素的引用必须给出两个下标。引用的格式为：　　       &lt;数组名&gt;[下标1][下标2]；说明：显然，每个下标表达式取值不应超出下标所指定的范围，否则会导致致命的越界错误。　　例如，设有定义：int a[3][5];　　则表示a是二维数组（相当于一个35的表格），共有35&#x3D;15个元素，它们是：　　a[0][0] a[">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/2021/10/03/%E6%8D%A2%E4%B8%BB%E9%A2%98/img/1.png">
-<meta property="article:published_time" content="2021-10-03T08:38:00.000Z">
-<meta property="article:modified_time" content="2021-10-07T10:59:51.763Z">
+<meta property="article:published_time" content="2021-10-31T12:26:53.000Z">
+<meta property="article:modified_time" content="2021-10-31T12:56:57.049Z">
 <meta property="article:author" content="Li Weitao">
-<meta property="article:tag" content="hexo主题">
+<meta property="article:tag" content="C语言">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2021/10/03/%E6%8D%A2%E4%B8%BB%E9%A2%98/img/1.png">
 
 
-<link rel="canonical" href="http://example.com/2021/10/03/%E6%8D%A2%E4%B8%BB%E9%A2%98/">
+<link rel="canonical" href="http://example.com/2021/10/31/c%E8%AF%AD%E8%A8%80/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2021/10/03/%E6%8D%A2%E4%B8%BB%E9%A2%98/","path":"2021/10/03/换主题/","title":"更换主题失败"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2021/10/31/c%E8%AF%AD%E8%A8%80/","path":"2021/10/31/c语言/","title":"c语言"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>更换主题失败 | Hello World</title>
+<title>c语言 | Hello World</title>
   
 
 
@@ -150,7 +148,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AE%B0%E6%88%91%E7%9A%84%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%8D%A2"><span class="nav-number">1.</span> <span class="nav-text">记我的主题更换</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#C%E8%AF%AD%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">C语言</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -226,7 +224,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/03/%E6%8D%A2%E4%B8%BB%E9%A2%98/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/31/c%E8%AF%AD%E8%A8%80/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/header.jpg">
@@ -239,7 +237,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          更换主题失败
+          c语言
         </h1>
 
         <div class="post-meta-container">
@@ -249,23 +247,17 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
+      
 
-      <time title="创建时间：2021-10-03 16:38:00" itemprop="dateCreated datePublished" datetime="2021-10-03T16:38:00+08:00">2021-10-03</time>
+      <time title="创建时间：2021-10-31 20:26:53 / 修改时间：20:56:57" itemprop="dateCreated datePublished" datetime="2021-10-31T20:26:53+08:00">2021-10-31</time>
     </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-10-07 18:59:51" itemprop="dateModified" datetime="2021-10-07T18:59:51+08:00">2021-10-07</time>
-      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
       </span>
       <span class="post-meta-item-text">分类于</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/hexo%E4%B8%BB%E9%A2%98/" itemprop="url" rel="index"><span itemprop="name">hexo主题</span></a>
+          <a href="/categories/C%E8%AF%AD%E8%A8%80/" itemprop="url" rel="index"><span itemprop="name">C语言</span></a>
         </span>
     </span>
 
@@ -279,9 +271,13 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="记我的主题更换"><a href="#记我的主题更换" class="headerlink" title="记我的主题更换"></a>记我的主题更换</h1><p>今早打开自己的hexo博客觉得太单调无聊了，不想和别人一样的博客界面，想尝试一下自己更换自己的界面。当然第一步还是去网上查找了相关资料，查到了一个更换主题的hexo自带网站：<a target="_blank" rel="noopener" href="https://hexo.io/themes/">https://hexo.io/themes/</a> 浏览了一番过后选中了自己喜欢的主题，最终选中了这款<a target="_blank" rel="noopener" href="https://github.com/WinMin/Sw-blog">https://github.com/WinMin/Sw-blog</a> 我按照网上讲述的过程去做，结果是换了别人创作的主题没错，可是内容也换成了别人的了，经过了漫长的翻阅资料时间，我最终放弃了更换主题，打算恢复默认主题，后来我就克隆原来的主题，改了一些地方，终于是把主题更换回来了，但是我的博客里面还增加了几个我不认识的文件，具体看图。<br><img src="img/1.png" alt="header"></p>
+        <h1 id="C语言"><a href="#C语言" class="headerlink" title="C语言"></a>C语言</h1><p>二维数组的数组元素引用与一维数组元素引用类似，区别在于二维数组元素的引用必须给出两个下标。<br>引用的格式为：<br>　　       &lt;数组名&gt;[下标1][下标2]；<br>说明：显然，每个下标表达式取值不应超出下标所指定的范围，否则会导致致命的越界错误。<br>　　例如，设有定义：int a[3][5];<br>　　则表示a是二维数组（相当于一个3<em>5的表格），共有3</em>5=15个元素，它们是：<br>　　a[0][0] a[0][1] a[0][2] a[0][3] a[0][4]<br>　　a[1][0] a[1][1] a[1][2] a[1][3] a[1][4]<br>　　a[2][0] a[2][1] a[2][2] a[2][3] a[2][4]<br>　　因此可以看成一个矩阵（表格），a[2][3]即表示第3行第4列的元素。<br>二维数组的初始化和一维数组类似。可以将每一行分开来写在各自的括号里，也可以把所有数据写在一个括号里。</p>
 <span id="more"></span>
-<p>经过这次的学习，我发现我对于github还是不太熟练，毕竟更换壁纸的难度不算太大，可是我却搞砸了，在git bash here中经常出现fatal和error，心态都锻炼到位了，下次更换主题我想在实验室里更换，毕竟那里大佬更多，我也能更放心地去开拓自己的视野，因为我生怕把自己的电脑搞坏了。。。</p>
+
+<p>字符数组<br>字符类型为由一个字符组成的字符常量或字符变量。<br>　　字符常量定义:<br>　　　 const　<br>　　　　　　字符常量=‘字符’<br>　　字符变量定义:<br>　　　　　    char 字符变量;<br>　　字符类型是一个有序类型, 字符的大小顺序按其ASCⅡ代码的大小而定。</p>
+<p>字符数组是指元素为字符的数组。字符数组是用来存放字符序列或字符串的。字符数组也有一维、二维和三维之分。</p>
+<p>1、字符数组的定义格式<br>　　字符数组定义格式同于一般数组，所不同的是数组类型是字符型，第一个元素同样是从ch1[0]开始，而不是ch1[1]。具体格式如下：<br>　　     [存储类型] char 数组名[常量表达式1]…<br>　　例如：<br>　　  char ch1[5];          //数组ch1是一个具有5个字符元素的一维字符数组<br>      char ch2[3][5];   //数组ch2是一个具有15个字符元素的二维字符数组</p>
+<p>2.字符数组的赋值<br>　　字符数组赋值类似于一维数组，赋值分为数组的初始化和数组元素的赋值。初始化的方式有用字符初始化和用字符串初始化两种，也有用初始值表进行初始化的。<br>　　(1).用字符初始化数组<br>　　例如：<br>      char chr1[5]={‘a’,‘b’,‘c’,‘d’,‘e’};<br>　　初始值表中的每个数据项是一个字符，用字符给数组chr1的各个元素初始化。当初始值个数少于元素个数时，从首元素开始赋值，剩余元素默认为空字符。<br>　　字符数组中也可以存放若干个字符，也可以来存放字符串。两者的区别是字符串有一结束符(‘\0’)。反过来说，在一维字符数组中存放着带有结束符的若干个字符称为字符串。字符串是一维数组，但是一维字符数组不等于字符串。<br>　　例如：<br>      char chr2[5]={‘a’,‘b’,‘c’,‘d’,‘\0’}; 即在数组chr2中存放着一个字符串“abcd”。<br>    (2).用字符串初始化数组<br>　　用一个字符串初始化一个一维字符数组，可以写成下列形式：<br>        char chr2[5]=“abcd”;<br>　　使用此格式均要注意字符串的长度应小于字符数组的大小或等于字符数组的大小减1。同理，对二维字符数组来讲，可存放若干个字符串。可使用由若干个字符串组成的初始值表给二维字符数组初始化。<br>　　例如：char chr3[3][4]={“abc”,“mno”,“xyz”};在数组ch3中存放3个字符串，每个字符串的长度不得大于3。<br>　　(3).数组元素赋值<br>　　    字符数组的赋值是给该字符数组的各个元素赋一个字符值。<br>　　例如：<br>　　　char chr[3];<br>　　　chr[0]=‘a’; chr[1]=‘b’;chr[2]=‘c’;<br>　　对二维、三维字符数组也是如此。当需要将一个数组的全部元素值赋予另一数组时，不可以用数组名直接赋值的方式，要使用字符串拷贝函数来完成。<br>    (4).字符常量和字符串常量的区别<br>　　①两者的定界符不同，字符常量由单引号括起来，字符串常量由双引号括起来。<br>　　②字符常量只能是单个字符，字符串常量则可以是多个字符。<br>　　③可以把一个字符常量赋给一个字符变量，但不能把一个字符串常量赋给一个字符变量。<br>　　④字符常量占一个字节，而字符串常量占用字节数等于字符串的字节数加1。增加的一个字节中存放字符串结束标志‘\0’。例如：字符常量‘a’占一个字节，字符串常量“a”占二个字节。</p>
 
     </div>
 
@@ -309,21 +305,18 @@
 </div>
 
           <div class="post-tags">
-              <a href="/tags/hexo%E4%B8%BB%E9%A2%98/" rel="tag"># hexo主题</a>
+              <a href="/tags/C%E8%AF%AD%E8%A8%80/" rel="tag"># C语言</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2021/09/21/%E5%9C%A8%E8%BF%99%E9%87%8C/" rel="prev" title="在这里">
-                  <i class="fa fa-chevron-left"></i> 在这里
+                <a href="/2021/10/24/%E6%95%B0%E7%BB%84/" rel="prev" title="C语言的学习">
+                  <i class="fa fa-chevron-left"></i> C语言的学习
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2021/10/06/%E5%AE%8C%E5%96%84%E5%8D%9A%E5%AE%A2/" rel="next" title="完善博客">
-                  完善博客 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
